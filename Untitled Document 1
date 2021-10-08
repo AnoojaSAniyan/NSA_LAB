@@ -1,0 +1,136 @@
+	1)mkdir FISAT
+	mkdir DAY1
+	mkdir DAY2
+	mkdir day3
+	cd ..
+	cd FISAT
+	cd DAY1
+	exam@debian:~/FISAT$ cd DAY1
+	exam@debian:~/FISAT/DAY1$ cat>f1.txt
+	students
+
+	cd ..
+	cd
+	^C
+	exam@debian:~/FISAT/DAY1$ ls
+	f1.txt  f2.txt
+	exam@debian:~/FISAT/DAY1$ cat>f3.txt
+	teachers
+	exam@debian:~/FISAT/DAY1$ ls
+	f1.txt  f2.txt
+	exam@debian:~/FISAT/DAY1$ cat>f3.txt
+	teachers
+	^C
+	exam@debian:~/FISAT/DAY1$ cd ..
+	exam@debian:~/FISAT$ mkdir DAY2
+	exam@debian:~/FISAT$ cd DAY2
+	exam@debian:~/FISAT/DAY2$ cat>m1.txt
+	staff
+	^C
+	exam@debian:~/FISAT/DAY2$ cat>m2.txt
+	salary
+	^c
+
+
+bash: cd: DAY#: No such file or directory
+exam@debian:~/FISAT$ mkdir DAY3
+mkdir: cannot create directory ‘DAY3’: File exists
+exam@debian:~/FISAT$ mkdir DAY3
+mkdir: cannot create directory ‘DAY3’: File exists
+exam@debian:~/FISAT$ mkdir day3
+exam@debian:~/FISAT$ cd day3
+exam@debian:~/FISAT/day3$ cat>c1.txt
+punes
+^C
+exam@debian:~/FISAT/day3$ cat>c2.txt
+drivers
+
+exam@debian:~/FISAT/day3$ cd ..
+exam@debian:~/FISAT$ cd DAY2
+
+exam@debian:~/FISAT/DAY2$ cat>m3.txt
+hod
+^C
+
+exam@debian:~/FISAT/DAY2$ cd ..
+exam@debian:~/FISAT$ cd day3
+exam@debian:~/FISAT/day3$ ls
+c1.txt  c2.txt
+	
+
+       
+       1)) cat m1 m2>m3 
+       2)) cp -i m3 c3
+       3))3))exam@debian:~/FISAT/DAY1$ chmod g-wx f1.txt
+	exam@debian:~/FISAT/DAY1$ ls
+	f1.txt  f2.txt  f3.txt
+	exam@debian:~/FISAT/DAY1$ cat f1.txt
+	students
+	4))4))		exam@debian:~/FISAT/DAY1$ ps
+	    PID TTY          TIME CMD
+	   3209 pts/0    00:00:00 bash
+	   4696 pts/0    00:00:00 ps
+	exam@debian:~/FISAT/DAY1$ 
+	5))exam@debian:~/FISAT/DAY1$ pwd
+	/home/exam/FISAT/DAY1
+	exam@debian:~/FISAT/DAY1$ 
+
+shell programming
+
+echo -e "menu \n 1.circle \n 2.rectangle \n 3.triangle"
+echo "enter your choice: "
+read ch 
+case $ch in
+1)echo "enter raduis"
+read r
+ar=`expr 22 \* $r \* $r / 7`
+echo " area:$ar ";;
+2)echo "enter length"
+read l
+echo "enter breadth"
+read b
+ar=`expr $l \* $b`
+echo "area:$ar";;
+3)echo "enter height"
+read h
+echo "enter breadth"
+read c
+ar=`expr $h \* $c / 2`
+echo "area:$ar";;
+esac
+output 
+
+exam@debian:~$ bash shell.sh
+menu 
+ 1.circle 
+ 2.rectangle 
+ 3.triangle
+enter your choice: 
+3
+enter height
+3
+enter breadth
+3
+expr: non-integer argument
+exam@debian:~$ bash shell.sh
+menu 
+ 1.circle 
+ 2.rectangle 
+ 3.triangle
+enter your choice: 
+3
+enter height
+2
+enter breadth
+3
+exam@debian:~$ bash shell.sh
+menu 
+ 1.circle 
+ 2.rectangle 
+ 3.triangle
+enter your choice: 
+3
+enter height
+2
+
+
